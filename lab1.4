@@ -1,0 +1,11 @@
+while True:
+    user_input = input("Введите число: → ")
+    if user_input.lower() == "exit":
+        print("Выход из программы...")
+        break
+    if user_input.lstrip('-').isdigit():
+        number_str = user_input.lstrip('-')
+        digit_count = len(number_str)
+        print(f"В этом числе {digit_count} цифр.")
+    else:
+        print("Ошибка")
